@@ -1,6 +1,6 @@
 This repo contains all of the necessary resources for using the **ADA Mouth**. 
 
-See the mouth in action [here](https://www.youtube.com/watch?v=ZxVxqeChxVc) and [here](https://www.youtube.com/watch?v=1Y0yb5UmyZ8)
+See the mouth in action [here](https://www.youtube.com/watch?v=ZxVxqeChxVc) and [here](https://www.youtube.com/watch?v=1Y0yb5UmyZ8).
 
 Check out the wiki for build instructions: [https://github.com/personalrobotics/ada_mouth/wiki/ADA-Mouth-Build-Guide](https://github.com/personalrobotics/ada_mouth/wiki/ADA-Mouth-Build-Guide)
 
