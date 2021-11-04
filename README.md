@@ -1,0 +1,1 @@
+This repo contains all of the resources necessary to run the **ADA Mouth**. Check out wiki for build instructions: [https://github.com/personalrobotics/ada_mouth/wiki/ADA-Mouth-Build-Guide](https://github.com/personalrobotics/ada_mouth/wiki/ADA-Mouth-Build-Guide)
