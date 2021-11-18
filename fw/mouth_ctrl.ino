@@ -16,6 +16,7 @@
 Servo servo;
 unsigned long last_sample = 0; // Timestamp of previous sensor sample sent
 uint8_t sensor_buff[2*SENSOR_COUNT]; // Write buffer for sensor data
+unsigned int led_count = 0;
 
 // Initialize the mouth
 void setup() {
@@ -27,6 +28,8 @@ void setup() {
   // Open the mouth by default
   servo.write(MIN_SERVO_CMD);
   
+  pinMode(LED_BUILTIN, OUTPUT);
+  digitalWrite(LED_BUILTIN, HIGH);
 }
 
 void loop() {
@@ -72,6 +75,14 @@ void loop() {
 
     // Send the data to host         
     Serial.write(sensor_buff, 2*SENSOR_COUNT);
+
+    if(led_count < TRANSFER_RATE/2)
+    {
+      digitalWrite(LED_BUILTIN, HIGH);
+    } else {
+      digitalWrite(LED_BUILTIN, LOW);
+    }
+    led_count = (led_count + 1) % TRANSFER_RATE;
   }
   
 }
